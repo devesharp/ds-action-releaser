@@ -2,7 +2,7 @@
 set -e
 
 npm install -g @devesharp/ds-releaser --unsafe-perm
-ds-releaser -t semantic --nonRoot
+ds-releaser -t ${INPUT_TYPE} --nonRoot
 
 INPUT_BRANCH=${INPUT_BRANCH:-master}
 INPUT_FORCE=${INPUT_FORCE:-false}

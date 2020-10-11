@@ -26,6 +26,10 @@ inputs:
     description: 'Directory to change to before pushing.'
     required: false
     default: '.'
+  type:
+    description: 'Set type versioning build or semantic'
+    required: false
+    default: 'build'
 runs:
   using: 'docker'
   image: 'Dockerfile'
