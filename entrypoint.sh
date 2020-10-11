@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-npm install -g @devesharp/ds-releaser
+npm install -g @devesharp/ds-releaser --unsafe-perm
 ds-releaser -t semantic --nonRoot
 
 INPUT_BRANCH=${INPUT_BRANCH:-master}
