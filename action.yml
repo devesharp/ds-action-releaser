@@ -1,0 +1,9 @@
+# action.yml
+name: 'Devesharp Action Releaser'
+description: '--'
+branding:
+  icon: alert-octagon  
+  color: gray-dark
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
