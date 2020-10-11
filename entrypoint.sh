@@ -27,10 +27,10 @@ fi
 
 cd ${INPUT_DIRECTORY}
 
-remote_repo="https://devesharp[bot]@users.noreply.github.com:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
+remote_repo="https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
 
-git config user.name "devesharp"
-git config user.email "devesharp[bot]@users.noreply.github.com"
-git config user.password ${INPUT_GITHUB_TOKEN}
+git config --local user.name "devesharp"
+git config --local user.email "devesharp[bot]@users.noreply.github.com"
+git config --local user.password ${INPUT_TOKEN}
 
 git push "${remote_repo}" HEAD:${INPUT_BRANCH} --follow-tags $_FORCE_OPTION $_TAGS;
