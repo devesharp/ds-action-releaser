@@ -1,5 +1,5 @@
 # Imagem de contêiner que executa seu código
-FROM alpine:3.10
+FROM node:12.19.0-alpine
 
 # Copia o arquivo de código do repositório de ação para o caminho do sistema de arquivos `/` do contêiner
 COPY entrypoint.sh /entrypoint.sh
