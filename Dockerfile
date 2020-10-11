@@ -1,5 +1,5 @@
 # Imagem de contêiner que executa seu código
-FROM node:12.19.0-alpine
+FROM node:12
 
 RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
 
