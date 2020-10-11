@@ -27,7 +27,7 @@ fi
 
 cd ${INPUT_DIRECTORY}
 
-remote_repo="https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
+remote_repo="https://devesharp[bot]@users.noreply.github.com:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
 
 git config --global user.name "devesharp"
 git config --global user.email "devesharp[bot]@users.noreply.github.com"
