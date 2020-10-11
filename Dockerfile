@@ -1,12 +1,10 @@
 # Imagem de contêiner que executa seu código
 FROM node:12
 
-RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
+RUN apt install curl python -y
 
 # Copia o arquivo de código do repositório de ação para o caminho do sistema de arquivos `/` do contêiner
 COPY entrypoint.sh /entrypoint.sh
-
-RUN apk --no-cache add curl
 
 RUN chmod +x entrypoint.sh
 
