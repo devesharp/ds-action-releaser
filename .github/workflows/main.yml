@@ -9,7 +9,8 @@ jobs:
       steps:
          -  uses: actions/checkout@v1
 
+
          -  uses: devesharp/ds-action-releaser@master
             with:
-               type: 'semantic'
+               type: 'build'
                github_token: ${{ secrets.GITHUB_TOKEN }}
